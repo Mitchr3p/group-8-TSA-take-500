@@ -1,34 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>planet</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>planet</title>
 
-  <!-- Fonts from the Figma -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fonts from the Figma -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- All CSS files are linked already. Nobody needs to edit the <head>. -->
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/hero.css">
-</head>
-<body>
-  <div class="page">
+    <!-- All CSS files are linked already. Nobody needs to edit the <head>. -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- ==================== HEADER  |  css/header.css ==================== -->
+      <!-- CHIDERA: paste this between the HEADER comments in index.html -->
 
-    <!-- ==================== HEADER  |  css/header.css ==================== -->
+      <header class="header">
+        <a href="#" class="header-logo">
+          <img class="header-logo-icon" src="images/logo.svg" alt="" />
+          <span class="header-logo-text">planet</span>
+        </a>
 
-    <!-- ==================== END HEADER ==================== -->
+        <button class="header-toggle" type="button">
+          <span class="header-toggle-text">Dark</span>
+          <img class="header-toggle-icon" src="images/icon-moon.svg" alt="" />
+        </button>
+      </header>
 
+      <!-- ==================== END HEADER ==================== -->
 
-    <main>
-      <!-- ==================== HERO  |  css/hero.css ==================== -->
+      <main>
+        <!-- ==================== HERO  |  css/hero.css ==================== -->
+        <!-- CHIDERA: paste this between the HERO comments in index.html -->
 
-      <!-- ==================== END HERO ==================== -->
-    </main>
+        <section class="hero">
+          <form class="hero-search">
+            <img class="hero-search-icon" src="images/icon-search.svg" alt="" />
+            <input
+              class="hero-search-input"
+              type="text"
+              placeholder="Search planet name..."
+            />
+            <button class="hero-search-button" type="button">Search</button>
+          </form>
 
-  </div>
-</body>
+          <article class="hero-card">
+            <img
+              class="hero-card-image"
+              src="images/earth.svg"
+              alt="Planet Earth"
+            />
+
+            <div class="hero-card-body">
+              <h1 class="hero-card-name">Earth</h1>
+              <p class="hero-card-type">Terrestrial</p>
+              <p class="hero-card-text">
+                The only known planet to support life, with liquid water on its
+                surface.
+              </p>
+
+              <div class="hero-stats">
+                <div class="hero-stat">
+                  <span class="hero-stat-label">Gravity</span>
+                  <span class="hero-stat-value">9.8</span>
+                </div>
+                <div class="hero-stat">
+                  <span class="hero-stat-label">Mass</span>
+                  <span class="hero-stat-value">0.00315</span>
+                </div>
+                <div class="hero-stat">
+                  <span class="hero-stat-label">Period</span>
+                  <span class="hero-stat-value">365</span>
+                </div>
+              </div>
+
+              <ul class="hero-facts">
+                <li class="hero-fact">
+                  <img
+                    class="hero-fact-icon"
+                    src="images/icon-temp.svg"
+                    alt="Temperature"
+                  />288
+                </li>
+                <li class="hero-fact">
+                  <img
+                    class="hero-fact-icon"
+                    src="images/icon-moons.svg"
+                    alt="Moons"
+                  />1
+                </li>
+                <li class="hero-fact">
+                  <img
+                    class="hero-fact-icon"
+                    src="images/icon-diameter.svg"
+                    alt="Diameter"
+                  />12756
+                </li>
+                <li class="hero-fact">
+                  <img
+                    class="hero-fact-icon"
+                    src="images/icon-distance.svg"
+                    alt="Distance from sun"
+                  />149.6
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <!-- ==================== END HERO ==================== -->
+      </main>
+    </div>
+  </body>
 </html>
