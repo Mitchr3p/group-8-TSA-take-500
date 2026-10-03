@@ -5,11 +5,11 @@
 
 /* ---------- Colours (light) ---------- */
 :root {
-  --color-bg: #f6f8ff;        /* page background, stats box */
-  --color-card: #fefefe;      /* cards, search bar */
-  --color-text: #2b3442;      /* main text */
-  --color-muted: #4b6a9b;     /* small text, icons */
-  --color-primary: #0079ff;   /* buttons, planet type */
+  --color-bg: #f6f8ff; /* page background, stats box */
+  --color-card: #fefefe; /* cards, search bar */
+  --color-text: #2b3442; /* main text */
+  --color-muted: #4b6a9b; /* small text, icons */
+  --color-primary: #0079ff; /* buttons, planet type */
   --color-primary-hover: #60abff;
 
   --font-main: "Inter", Arial, sans-serif;
