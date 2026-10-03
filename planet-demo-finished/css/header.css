@@ -1,0 +1,70 @@
+/* =========================================================
+   header.css  |  owner: Ayobami
+
+   RULE: every class starts with  header-
+
+   CLASS NAMES IN THIS SECTION (from index.html):
+     .header
+     .header-logo    .header-logo-icon    .header-logo-text
+     .header-toggle  .header-toggle-text  .header-toggle-icon
+
+   COLOURS YOU CAN USE (they come from base.css):
+     var(--color-bg)        page background
+     var(--color-card)      cards and the search bar
+     var(--color-text)      main text
+     var(--color-muted)     small text and icons
+     var(--color-primary)   buttons, links
+     var(--color-primary-hover)
+   ========================================================= */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-logo-icon {
+  width: 34px;
+}
+
+.header-logo-text {
+  font-family: var(--font-main);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.header-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 4px 6px;
+  color: var(--color-muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header-toggle:hover {
+  color: var(--color-text);
+}
+
+.header-toggle:focus-visible {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.header-toggle-icon {
+  width: 18px;
+}
