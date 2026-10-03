@@ -1,0 +1,21 @@
+/* =========================================================
+   hero.css  |  owner: ________
+
+   RULE: every class starts with  hero-
+
+   CLASS NAMES IN THIS SECTION (from index.html):
+     .hero
+     .hero-search      .hero-search-icon   .hero-search-input  .hero-search-button
+     .hero-card        .hero-card-image    .hero-card-body
+     .hero-card-name   .hero-card-type     .hero-card-text
+     .hero-stats       .hero-stat          .hero-stat-label    .hero-stat-value
+     .hero-facts       .hero-fact          .hero-fact-icon
+
+   COLOURS YOU CAN USE (they come from base.css):
+     var(--color-bg)        page background
+     var(--color-card)      cards and the search bar
+     var(--color-text)      main text
+     var(--color-muted)     small text and icons
+     var(--color-primary)   buttons, links
+     var(--color-primary-hover)
+   ========================================================= */

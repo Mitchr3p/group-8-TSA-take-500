@@ -1,0 +1,67 @@
+/* =========================================================
+   base.css  |  owner: captain + vice captain
+   Shared colours, fonts and reset. Don't edit it in your task.
+   ========================================================= */
+
+/* ---------- Colours (light) ---------- */
+:root {
+  --color-bg: #f6f8ff;        /* page background, stats box */
+  --color-card: #fefefe;      /* cards, search bar */
+  --color-text: #2b3442;      /* main text */
+  --color-muted: #4b6a9b;     /* small text, icons */
+  --color-primary: #0079ff;   /* buttons, planet type */
+  --color-primary-hover: #60abff;
+
+  --font-main: "Inter", Arial, sans-serif;
+  --font-mono: "Space Mono", "Courier New", monospace;
+  --radius: 15px;
+  --shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+
+/* ---------- Colours (dark) - used later when the theme switch is built ---------- */
+[data-theme="dark"] {
+  --color-bg: #141d2f;
+  --color-card: #1e2a47;
+  --color-text: #ffffff;
+  --color-muted: #cdd6ea;
+  --shadow: none;
+}
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-mono);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+/* ---------- Page width (shared, anyone may use it) ---------- */
+.page {
+  width: 100%;
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
